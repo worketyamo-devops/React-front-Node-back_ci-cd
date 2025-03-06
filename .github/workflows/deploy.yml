@@ -17,7 +17,9 @@ jobs:
         run: cd ReactJS_with_backend_and_frontend/backend
 
       - name: Installer Jest et Supertest pour les test unitaires du backend 
-        run: npm install --save-dev jest supertest mongoose-mock dotenv
+        run: |
+          npm install
+          npm install --save-dev jest supertest mongoose-mock dotenv
       
       - name: modifier index.js pour le rendre testable 
         run: echo "module.exports = { app, server };" >> index.js
