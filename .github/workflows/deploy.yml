@@ -8,7 +8,7 @@ jobs:
 
   # etapes reserves au testes avant le build 
   Test_unitaires_backend:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: clone the code 
         uses: actions/checkout@v3
